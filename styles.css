@@ -58,3 +58,9 @@ nav li a:hover {
     background-color: green;
     color: white;
 }
+
+#page-wrap {
+     width: 80%;
+     margin: 0 auto;
+    height: 100%
+}
