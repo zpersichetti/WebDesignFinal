@@ -1,0 +1,36 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+	padding: 0px;
+	margin: 0px;
+	font-size: 100%;
+	font-weight: normal;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+
+.newsletter {
+	width:80%;
+	text-align:center;
+	background-color:#999999;
+	border-spacing:1px;
+	padding:20px;
+	margin:10px auto;
+	}
+
+.newsletter th {
+	width:40%;
+	font-weight: normal;
+	text-align: right;
+	padding-right: 10px;
+	padding-left: 50px;
+	background-color: #CECECE;
+	font-size:14px;
+	}
+
+.newsletter td {
+	width:60%;
+	font-weight: normal;
+	text-align: left;
+	padding-left: 10px;
+	background-color: #E0E0E0;
+	}
+
+.newsletter td label {white-space:nowrap;}
