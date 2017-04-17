@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "description" content= "newsletter form">
+		<meta name ="author" content = "Steven Tynan">
+		<title> Newsletter </title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body style="background-color: black;">
+		<nav>
+			
+			<ul>
+				<li><a href = "divisions.html"> NFL Divisions</a></li>
+				<li><a href = "favoriteteams.html">Our Groups Favorite Teams</a></li>
+				<li><a href = "popularplayers.html"> Some Popular Players</a></li>
+				<li><a href = "rules.html"> NFL Rules</a></li>
+			</ul>
+		</nav>
+		
+		<header> 
+				Newsletter Sign-Up
+		</header>
+		
+		<main>
+		
+			<script type="text/javascript" src="scripts/greeting.js"></script>
+			
+			<p> Sign up for our newsletter to receive all of the latest news and updates related to the NFL! </p>
+			
+			<form name="request" enctype="multipart/form-data" method="post" action="processing.php" onsubmit="submission_alert()">
+   	
+				<table class="newsletter">
+				
+					<tr>
+						<th>Your Name (Required)</th>
+						<td><input type="text" name="name_from" value="" size="25" placeholder="Please enter your name." required /></td>
+					</tr>
+
+					<tr>
+						<th>Email (Required)</th>
+						<td><input type="email" name="email_from" value="" size="30" placeholder="Please enter your e-mail." required /></td>
+					</tr>
+				
+					<tr>
+						<th>Tell us what you like about the NFL (Optional)</th>
+						<td><input type="text" name="textline_optional" value="" size="50" placeholder="Please enter some text." /></td>
+					</tr>
+				
+					<tr>
+						<th>What division is your favorite team in? (Required)</th>
+						<td>
+							<select name="dropdown" required>
+								<option value="" style="color:#555555">Please Select</option>
+								<option value="1">AFC North</option>
+								<option value="2">AFC East</option>
+								<option value="3">AFC South</option>
+								<option value="4">AFC West</option>
+								<option value="5">NFC North</option>
+								<option value="6">NFC East</option>
+								<option value="7">NFC South</option>
+								<option value="8">NFC West</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<th>Do you want daily updates on NFL news, rather than weekly updates? (Required)</th>
+						<td>
+							<label><input type="radio" name="radio" value="1" required />Yes</label>
+							<label><input type="radio" name="radio" value="2" required />No</label>
+						</td>
+					</tr>
+
+					<tr>
+						<th>What information are you interested in? (Optional)</th>
+						<td>
+							<label><input type="checkbox" name="checkbox_1" value="Selected" />Standings</label>
+							<label><input type="checkbox" name="checkbox_2" value="Selected" />Scores</label>
+							<label><input type="checkbox" name="checkbox_3" value="Selected" />Player Updates</label>
+							<label><input type="checkbox" name="checkbox_4" value="Selected" />Injury Reports</label>
+						</td>
+					</tr>
+			
+					<tr>
+						<td colspan="2" style="background-color:#FFFFFF; text-align:center;">
+							<input type="submit" value="Submit" style="width:100px; margin:0px;" />
+						</td>
+					</tr>
+
+				</table>
+			
+			</form>
+		
+		</main>
+		
+	</body>
+		
+</html>
