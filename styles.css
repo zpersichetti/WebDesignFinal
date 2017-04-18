@@ -94,3 +94,9 @@ p.greeting{
 footer{
 	text-align:center;
 }
+
+#page-wrap {
+     width: 80%;
+     margin: 0 auto;
+    height: 100%
+}
