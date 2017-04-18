@@ -39,27 +39,32 @@ nav li {
     
     float: left;
     width: 20%;
+   
+    text-align: center;
+    padding: 14px 16px;
+    
+
     
 }
 
 nav li a {
-    
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-
+    color: white;
+     
 }
 
 nav li a:hover {
-    background-color: black;
+    background-color:  black;
+    padding: 14px 16px;
+    display:inline-block;
+    width: 100%;
+
 }
 
 .active {
     background-color: green;
     color: white;
-     display: block;
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
