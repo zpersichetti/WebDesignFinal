@@ -39,6 +39,7 @@ nav li {
     
     float: left;
     width: 20%;
+    
 }
 
 nav li a {
@@ -48,6 +49,7 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
 }
 
 nav li a:hover {
