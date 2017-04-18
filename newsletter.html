@@ -7,14 +7,16 @@
 		<title> Newsletter </title>
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="forms.css">
-		<link rel="football icon" href="media/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="media/favicon.ico" type="image/x-icon" />
+		<script type="text/javascript" src="scripts/submission.js"></script>
+		
+		
 	</head>
-<body>
-    <div id="page-wrap">
+
 		<nav>
 			
 			<ul>
-				<li><a href = "index.html">NFL Divisions</a></li>
+				<li><a href = "index.html">Home</a></li>
 				<li><a href = "rules.html">Rules</a></li>
 				<li><a href = "favoriteteams.html">Our Favorite Teams</a></li>
 				<li><a href = "famousplays.html">Famous Plays</a></li>
@@ -22,15 +24,46 @@
 				<li><a href = "halloffame.html">Hall of Fame</a></li>
 				<li class="active">Newsletter</li>
 			</ul>
+		
 		</nav>
 		
-		<header> 
-				Newsletter Sign-Up
-		</header>
+		<h1 style = "font-size:200%;margin:15px;">Newsletter Sign-Up</h1>
+		
+		<p>Look at the date! Sign up before it's too late!</p> 
+		<br/>
+		
+		<script type="text/javascript">
+			tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+			tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+			function GetClock(){
+			var d=new Date();
+			var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+			if(nyear<1000) nyear+=1900;
+			var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+			if(nhour==0){ap=" AM";nhour=12;}
+			else if(nhour<12){ap=" AM";}
+			else if(nhour==12){ap=" PM";}
+			else if(nhour>12){ap=" PM";nhour-=12;}
+
+			if(nmin<=9) nmin="0"+nmin;
+			if(nsec<=9) nsec="0"+nsec;
+
+			document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+}
+
+			window.onload=function(){
+			GetClock();
+			setInterval(GetClock,1000);
+}
+		</script>
+		<div id="clockbox"></div>
+		<br/>
+		
+		<div style="background-color: red;">
 		
 		<main>
-		
-			<script type="text/javascript" src="scripts/greeting.js"></script>
 			
 			<p> Sign up for our newsletter to receive all of the latest news and updates related to the NFL! </p>
 			
@@ -97,9 +130,12 @@
 				</table>
 			
 			</form>
+			
+			<p>Thank you!</p>
 		
 		</main>
-    </div>
+		
+		</div>
 		
 	</body>
 		
