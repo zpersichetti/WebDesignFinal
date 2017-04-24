@@ -113,6 +113,13 @@ table.center {
     vertical-align: middle;
    
 }
+p.center
+{
+    text-align: left;
+    padding: 2em;
+    padding-bottom: 1em;
+    padding-top: 0;
+}
 
 h1 {
 	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
